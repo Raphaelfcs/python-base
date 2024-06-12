@@ -1,1 +1,3 @@
-python -c "print('rapha'.upper())"
+print('rapha'.upper())
+
+print(56 + 7)
