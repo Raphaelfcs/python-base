@@ -21,8 +21,6 @@ __author__ = "Raphael"
 numeros = list(range(1, 11))
 
 # Iterable (percorriveis)
-tabuada = "📲" 
-tabuada_encoded = tabuada.encode("utf-8")
 
 for n1 in numeros:
     print("{:-^18}".format(f"Tabuada do {n1}"))
@@ -30,6 +28,6 @@ for n1 in numeros:
     for n2 in numeros:
         resultado = n1 * n2
         print("{:^18}".format(f"{n1} x {n2} = {resultado}"))
-    print("#" * 18)
+    print("#" * 18,"\N{party popper}")
 
 
