@@ -39,4 +39,4 @@ elif current_language == "es_SP":
 elif current_language == "fr_FR":
     msg = "Bonjour, Monde!"
 
-print(msg)
+print(msg,"\U0001f43C")
