@@ -26,17 +26,13 @@ import os
 
 current_language = os.getenv("LANG", "en_US")[:5]
 
-msg = ""
+msg = {
 
-if current_language == "pt_BR":
-    msg = "Olá, Mundo!"
-elif current_language == "it_IT":
-    msg = "Ciao, Mondo!"
-elif current_language == "en_US":
-    msg = "Hello, World!"
-elif current_language == "es_SP":
-    msg = "Hola, Mundo!"
-elif current_language == "fr_FR":
-    msg = "Bonjour, Monde!"
+     "pt_BR" : "Olá, Mundo!",
+     "it_IT" : "Ciao, Mondo!",
+     "en_US": "Hello, World!",
+     "fr_FR" : "Bonjour, Monde!",
+     "es_SP": "Hola, Mundo!"
+}
 
-print(msg,"\U0001f43C")
+print(msg[current_language],"\U0001f43C")
